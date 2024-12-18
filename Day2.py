@@ -1,6 +1,6 @@
 def task1():
     total = 0
-    with open("file2.txt", "r") as file:
+    with open("inputs/file2.txt", "r") as file:
         for line in file:
             levels = list(map(int, line.split()))
             safe = True
@@ -24,7 +24,7 @@ def task1():
 
 def task2():
     safe_count = 0
-    with open("file2.txt", "r") as file:
+    with open("inputs/file2.txt", "r") as file:
         for line in file:
             levels = list(map(int, line.split()))
 
@@ -54,7 +54,7 @@ def task2():
 def task1_test():
     total = 0
     # split the inputs
-    with open("file2.txt", "r") as file:
+    with open("inputs/file2.txt", "r") as file:
         for line in file:
             cleaned = list(map(int, line.split()))
             if check_is_safe(cleaned):
@@ -78,7 +78,7 @@ def check_is_safe(line):
 def task2_test():
     total = 0
     # split the inputs
-    with open("file2.txt", "r") as file:
+    with open("inputs/file2.txt", "r") as file:
         for line in file:
             cleaned = list(map(int, line.split()))
             if check_is_safe(cleaned):

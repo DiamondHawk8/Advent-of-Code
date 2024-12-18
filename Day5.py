@@ -1,8 +1,8 @@
 def task1():
-    with open("file5a.txt", "r") as file1:
+    with open("inputs/file5a.txt", "r") as file1:
         rules = [line.strip().split("|") for line in file1]
 
-    with open("file5b.txt", "r") as file2:
+    with open("inputs/file5b.txt", "r") as file2:
         instructions = [line.strip().split(",") for line in file2]
 
     def is_update_valid(update, rules):
@@ -32,10 +32,10 @@ def task1():
 
 
 def task2():
-    with open("file5a.txt", "r") as file1:
+    with open("inputs/file5a.txt", "r") as file1:
         rules = [line.strip().split("|") for line in file1]
 
-    with open("file5b.txt", "r") as file2:
+    with open("inputs/file5b.txt", "r") as file2:
         instructions = [line.strip().split(",") for line in file2]
 
     def reorder_update(update, rules):

@@ -1,5 +1,5 @@
 def task1():
-    with open("file4.txt", "r") as file:
+    with open("inputs/file4.txt", "r") as file:
         total = 0
         arr = []
         for line in file:
@@ -50,7 +50,7 @@ def task1():
 
 
 def task2():
-    with open("file4.txt", "r") as file:
+    with open("inputs/file4.txt", "r") as file:
         arr = [list(line.strip()) for line in file]
 
     rows = len(arr)

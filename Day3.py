@@ -4,7 +4,7 @@ import re
 def task1():
     total = 0
     pattern = r"mul\((\d+),(\d+)\)"
-    with open("file3.txt", "r") as file:
+    with open("inputs/file3.txt", "r") as file:
         for line in file:
             matches = re.findall(pattern, line)
             numbers = [(int(x), int(y)) for x, y in matches]
@@ -21,7 +21,7 @@ def task2():
     pattern = r"mul\(([0-9]{1,3}),([0-9]{1,3})\)|do\(\)|don't\(\)"
     total = 0
     is_enabled = True
-    with open('file3.txt', 'r') as f:
+    with open('inputs/file3.txt', 'r') as f:
         data = f.read()
 
     matches = re.finditer(pattern, data)
