@@ -60,6 +60,11 @@ def find_anti_nodes2(area, char, x_cord, y_cord):
             # if a matching char is found and the antenna is not refering to itself
             if val == char and x != x_cord and y != y_cord:
                 print(f"matching char found at {x} {y}")
+
+                # Automatically add the matching antennas to nodes
+                node = (x, y)
+                antinodes.add(node)
+
                 # calculate the step between points
 
                 x_step = (x - x_cord)
